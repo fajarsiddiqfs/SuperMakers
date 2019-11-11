@@ -1,0 +1,17 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}

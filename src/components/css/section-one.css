@@ -1,0 +1,22 @@
+.section-one{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.section-one .image1{
+    position: absolute;
+width: 1039px;
+height: 721px;
+left: -255px;
+top: 82px;
+
+}
+
+.section-one .image2{
+    position: absolute;
+width: 784px;
+left: 602px;
+top: 238px;
+}
