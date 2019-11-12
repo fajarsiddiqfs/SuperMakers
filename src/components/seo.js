@@ -41,11 +41,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: '🎮 SuperMakers.xyz - Indie Game Build With No Code',
         },
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: 'https://raw.githubusercontent.com/fajarsiddiqfs/fajarsiddiq.com/master/dist/images/SMeta.png',
         },
         {
           property: `og:type`,
@@ -61,11 +65,15 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: '🎮 SuperMakers.xyz - Indie Game Build With No Code',
         },
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+            property: `twitter:image`,
+            content: 'https://raw.githubusercontent.com/fajarsiddiqfs/fajarsiddiq.com/master/dist/images/SMeta.png',
         },
       ].concat(meta)}
     />

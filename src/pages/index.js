@@ -12,7 +12,7 @@ import SectionFour from '../components/sectionFour'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="🎮 SuperMakers.xyz - Indie Game Build With No Code" />
     <SectionOne />
     <SectionTwo />
     <SectionThree />

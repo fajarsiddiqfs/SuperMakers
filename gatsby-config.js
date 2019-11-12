@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `supermakers.xyz`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `⚒️ Made by Fajar Siddiq 💻 Made possible with Koji`,
+    author: `@mddanishyusuf`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `supermakers`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/sm-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
