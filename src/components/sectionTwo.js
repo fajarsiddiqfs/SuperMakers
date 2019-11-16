@@ -13,8 +13,8 @@ const SectionTwo = () => {
                         <a href="https://www.producthunt.com/posts/supermakers?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-supermakers" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=151790&theme=dark" alt="SuperMakers - An indie game built with no code | Product Hunt Embed" style={{width: 250, height: 54}} width="250px" height="54px" /></a>
                         <h3>The Indie Game </h3>
                         <p>Made by Fajar Siddiq, Shipping is always fast! This game was made in 3 minutes at Koji  ⚡️ Let’s play & beat the highscore!</p>
-                        <div className="card-btn">
-                            Let’s Play
+                            <div className="card-btn">
+                            <a href="https://mohddanish.me">Let’s Play</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const SectionTwo = () => {
                 </div>
 
                 <div className="section-three-end">
-                    <h3>Build Games with No-Code</h3>
+                    <h3>Build Games <br/>with No-Code</h3>
                     <p>Modern "Progressive Web Apps" on any browser and every device. Deploy on Koji.</p>
                     <img className="image1" src={require('../images/Koji.png')} height="167px"/>
                 </div>

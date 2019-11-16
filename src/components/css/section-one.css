@@ -14,9 +14,33 @@ top: 82px;
 
 }
 
+  @media only screen and (max-width: 600px) {
+    .section-one {
+    display: none;
+    }
+  }
+
 .section-one .image2{
     position: absolute;
 width: 784px;
 left: 602px;
 top: 238px;
+}
+
+@media only screen and (min-width: 600px) {
+    .section-one2 {
+    display: none;
+    padding: 40px !important;
+    }
+  }
+
+  .section-one2 {
+    }
+
+  .section-one2 .image1{
+      margin-top: 40px;
+    width: 100%;
+}  .section-one2 .image2{
+    margin-top: 80px;
+    width: 100%;
 }

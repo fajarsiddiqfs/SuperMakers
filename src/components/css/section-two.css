@@ -6,6 +6,18 @@
     grid-gap: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+    .section-two .main-card {
+        display: block;
+        padding: 20px;
+        margin: 40px 0px;
+    }
+
+    .section-two .main-card  .section-two-info {
+        padding: 40px 0px;
+    }
+  }
+
 .section-two-info {
     text-align: center;
     color: #fff;
@@ -35,6 +47,11 @@
     padding: 10px 53px;
     cursor: pointer;
     font-weight: 600;
+ }
+
+ .section-two-info .card-btn a {
+     text-decoration: none;
+     color: #fff;
  }
 
 .iframe-lists {

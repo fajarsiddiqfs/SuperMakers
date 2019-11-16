@@ -8,7 +8,7 @@ const SectionFour = () => {
                 <div className="heading">
                     <h2>Now on Product  Hunt</h2>
                 </div>
-                <iframe style={{border: 'none'}} src="https://cards.producthunt.com/cards/posts/151790?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                <iframe style={{border: 'none'}} src="https://cards.producthunt.com/cards/posts/151790?v=1" width="450" height="350" frameborder="0" scrolling="no" allowfullscreen></iframe>
                 <br/>
                 <br/>
                 <br/>

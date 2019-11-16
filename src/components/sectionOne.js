@@ -6,6 +6,7 @@ import './css/section-one.css'
 
 const SectionOne = () => {
     return (
+        <>
         <div className="section-one">
             <div className="fajar-picture">
                 <img className="image1" src={require('../images/FSgrey.png')}/>
@@ -14,6 +15,17 @@ const SectionOne = () => {
                 <img className="image2" src={require('../images/SuperMakersLogo.png')}/>
             </div>
         </div>
+
+
+        <div className="section-one2">
+        <div className="supermaker-logo">
+            <img className="image2" src={require('../images/SuperMakersLogo.png')}/>
+        </div>
+        <div className="fajar-picture">
+            <img className="image1" src={require('../images/FSgrey.png')}/>
+        </div>
+        </div>
+</>
     )
 }
 

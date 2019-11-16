@@ -9,17 +9,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', sans-serif !important;
   background-color: #000;
+  overflow-x: hidden;
 }
 
 footer {
-  display: flex;
-  color: #fff;
-  justify-content: space-around;
-  align-items: center;
   padding: 40px 0px;
+  color: #fff;
+  text-align: center;
 }
 
-footer ul {
+@media only screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-around;
+  }
+}
+
+
+footer ul , .social ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -32,6 +40,14 @@ footer ul li {
 
 .social ul li {
   padding: 10px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .social ul li {
+    margin: 30px 0px;
+  
+  }
 }
 
 .menu ul li a {
