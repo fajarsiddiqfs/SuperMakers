@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `supermakers.xyz`,
     description: `⚒️ Made by Fajar Siddiq 💻 Made possible with Koji`,
-    author: `@mddanishyusuf`,
+    author: `@fajarsiddiqfs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
