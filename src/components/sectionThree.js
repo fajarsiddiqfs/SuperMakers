@@ -15,8 +15,8 @@ const SectionThree = () => {
     return (
         <div className="section-three">
                 <div className="heading">
-                    <h2>What others <br/>say about Supermakers?</h2>
-                    <p>Testimonial of makers playing the game at Supermakers. Thanks a million guys!</p>
+                    <h2>🤔 What others <br/>say about Supermakers?</h2>
+                    <p>Testimonial of makers playing the game at Supermakers. Thanks a million everyone for the support!</p>
                 </div>
 
                 <div className="testimonals">
