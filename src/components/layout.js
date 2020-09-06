@@ -37,9 +37,9 @@ const Layout = ({ children }) => {
           <div className="menu">
             <ul>
               <li><a href="https://medium.com/madewithkoji/how-a-professional-yo-yoer-built-launched-and-made-it-1-on-product-hunt-in-less-than-24-hours-e5c6fe4c6df3">Blog</a></li>
-              <li><a href="https://t.me/supermakers">Telegram</a></li>
+              <li><a href="https://t.me/fajarsiddiq">Telegram</a></li>
               <li><a href="https://getmakerlog.com/products/supermakers">Makerlog</a></li>
-              <li><a href="https://withkoji.com/~fajarsiddiq/">Koji</a></li>
+              <li><a href="https://withkoji.com/">Koji</a></li>
               </ul>
           </div>
           <div className="social">
