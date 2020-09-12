@@ -1,9 +1,9 @@
 # SuperMakers
 ![Supermakers.xyz](https://raw.githubusercontent.com/fajarsiddiqfs/SuperMakers/master/src/images/SM.png)
 
-🎮 Supermakers.xyz - Indie Game Build With No-Code
+# 🎮 Supermakers.xyz - Indie Game Build With No-Code
 
-You can download this landing page template for free.
+## You can download this landing page template for free.
 What's included? - Gatsby Source code & Figma Design File
 
 ✅ Official Website: www.supermakers.xyz
