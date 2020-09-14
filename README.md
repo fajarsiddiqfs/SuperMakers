@@ -11,3 +11,5 @@ What's included? - Gatsby Source code & Figma Design File
 🎮 Github Open Source Code: https://github.com/fajarsiddiqfs/SuperMakers
 
 🏝️ Figma File Design: https://www.figma.com/community/file/796832352118720161/Supermakers-2.0-Gatsby-Landing-Page
+
+🕵️‍♂️ Dev Article: https://dev.to/fajarsiddiq/gatsby-figma-landing-page-for-supermakers-30kh
