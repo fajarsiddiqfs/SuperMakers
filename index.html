@@ -92,7 +92,9 @@ h2{font-size:clamp(1.8rem,4.2vw,2.7rem);letter-spacing:-.03em;line-height:1.12;m
 .card:hover{border-color:var(--dark);box-shadow:0 10px 30px rgba(0,0,0,.08)}
 .thumb{height:120px;background:var(--grey);display:grid;place-items:center;border-bottom:1px solid var(--line)}
 .logo{width:56px;height:56px;border-radius:14px;background:var(--dark);color:#fff;display:grid;place-items:center;font-size:1.5rem;font-weight:700}
-.body{padding:22px;display:flex;flex-direction:column;gap:8px}
+.body{padding:22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .btn{align-self:flex-start;margin-top:auto}
+.card .body p{margin-bottom:10px}
 .card h3{margin:0;font-size:1.15rem;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .card p{margin:0;color:var(--muted);font-size:.97rem}
 .badge{font-size:.72rem;font-weight:600;color:var(--purple);background:var(--purple-soft);border-radius:999px;padding:2px 10px}
@@ -234,16 +236,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <p class="sub">A growing portfolio of independent digital products.</p>
       </div>
       <div class="grid">
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">D</span></div><div class="body"><h3>Duemate <span class="badge">Building</span></h3><p>An invoice follow-up assistant for freelancers, designers, consultants and small agencies.</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">A</span></div><div class="body"><h3>Approvely <span class="badge">Idea</span></h3><p>Collect client feedback, approvals and revision requests in one place</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">P</span></div><div class="body"><h3>Praisebox <span class="badge">Idea</span></h3><p>Collect testimonials and publish them as website widgets</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">R</span></div><div class="body"><h3>Renewpilot <span class="badge">Idea</span></h3><p>Track domain, hosting, SSL and software renewal dates</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">B</span></div><div class="body"><h3>Briefwell <span class="badge">Idea</span></h3><p>Turn client questionnaires into organised project briefs</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">D</span></div><div class="body"><h3>Dealtrail <span class="badge">Idea</span></h3><p>Track brand collaborations, deliverables, deadlines and payments</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>Licensely <span class="badge">Idea</span></h3><p>Track certificates, licences and expiry dates</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>Sessionly <span class="badge">Idea</span></h3><p>Manage workshop registrations, attendance, certificates and follow-ups</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>Launchlane <span class="badge">Idea</span></h3><p>Create simple waitlists and launch pages for upcoming products</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>Shipping Game <span class="badge">Launched 2019</span></h3><p>An indie game built with no code on Koji. Match it in 20 moves and get your high score.</p><a class="cardlink" href="https://www.producthunt.com/products/supermakers" target="_blank" rel="noopener">View on Product Hunt</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">D</span></div><div class="body"><h3>Duemate <span class="badge">Building</span></h3><p>An invoice follow-up assistant for freelancers, designers, consultants and small agencies.</p><a class="btn sm" href="#products" aria-label="Open Duemate">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">A</span></div><div class="body"><h3>Approvely <span class="badge">Idea</span></h3><p>Collect client feedback, approvals and revision requests in one place</p><a class="btn sm" href="#products" aria-label="Open Approvely">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">P</span></div><div class="body"><h3>Praisebox <span class="badge">Idea</span></h3><p>Collect testimonials and publish them as website widgets</p><a class="btn sm" href="#products" aria-label="Open Praisebox">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">R</span></div><div class="body"><h3>Renewpilot <span class="badge">Idea</span></h3><p>Track domain, hosting, SSL and software renewal dates</p><a class="btn sm" href="#products" aria-label="Open Renewpilot">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">B</span></div><div class="body"><h3>Briefwell <span class="badge">Idea</span></h3><p>Turn client questionnaires into organised project briefs</p><a class="btn sm" href="#products" aria-label="Open Briefwell">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">D</span></div><div class="body"><h3>Dealtrail <span class="badge">Idea</span></h3><p>Track brand collaborations, deliverables, deadlines and payments</p><a class="btn sm" href="#products" aria-label="Open Dealtrail">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>Licensely <span class="badge">Idea</span></h3><p>Track certificates, licences and expiry dates</p><a class="btn sm" href="#products" aria-label="Open Licensely">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>Sessionly <span class="badge">Idea</span></h3><p>Manage workshop registrations, attendance, certificates and follow-ups</p><a class="btn sm" href="#products" aria-label="Open Sessionly">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>Launchlane <span class="badge">Idea</span></h3><p>Create simple waitlists and launch pages for upcoming products</p><a class="btn sm" href="#products" aria-label="Open Launchlane">View Project →</a></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>Shipping Game <span class="badge">Launched 2019</span></h3><p>An indie game built with no code on Koji. Match it in 20 moves and get your high score.</p><a class="btn sm" href="https://www.producthunt.com/products/supermakers" target="_blank" rel="noopener" aria-label="Open Shipping Game on Product Hunt">View Project →</a></div></article>
       </div>
     </div>
   </section>
