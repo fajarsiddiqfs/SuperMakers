@@ -224,11 +224,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .ph-badge{width:100%;max-width:280px}
   .press{margin-top:40px}
   .portrait{width:150px;height:150px;font-size:3rem}
-  .social{display:grid;grid-template-columns:repeat(4,44px);gap:4px 8px;margin:18px 0 0 -9px}
-  .social a{display:grid;place-items:center;width:44px;height:44px}
-  footer .wrap{flex-direction:column;gap:4px}
+  .social{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:0;margin:18px -7px 0}
+  .social a{display:grid;place-items:center;flex:1 1 0;min-width:0;height:44px}
+  footer .wrap{flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:baseline;gap:8px;font-size:clamp(.62rem,2.9vw,.76rem);white-space:nowrap}
   .footer-art{margin-top:28px}
 }
+@media(max-width:340px){footer .wrap{flex-wrap:wrap;white-space:normal}.brand{font-size:.95rem;gap:6px}.nav .btn.sm{padding:0 10px;font-size:.8rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 </head>
