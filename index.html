@@ -69,13 +69,15 @@ h1{font-size:clamp(2.6rem,6.5vw,4.6rem);line-height:1.04;letter-spacing:-.035em;
 .t3{top:195px;left:4%;transform:rotate(-1deg)}
 
 .logos{padding:36px 0;background:var(--white)}
-.logo-row{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:20px 56px}
+.logo-row{list-style:none;margin:0;padding:0;display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:center;gap:20px 24px}
+.logo-row li{flex:0 1 auto;min-width:0}
 .logo-row a{display:flex;align-items:center;gap:10px;color:#9a9a9f;text-decoration:none;font-weight:700;font-size:1.1rem;letter-spacing:-.02em;transition:color .15s}
 .logo-row a:hover{color:var(--dark)}
 .lg{display:block;flex:none}
 .lg-wide{display:block;height:26px;width:auto}
 .logo-img{display:block;height:30px;width:auto;filter:grayscale(1);opacity:.5;transition:opacity .15s}
 .logo-row a:hover .logo-img{opacity:1}
+@media(max-width:820px){.logo-row{flex-wrap:wrap;justify-content:space-around;gap:24px 32px}}
 /* sections */
 section{padding:84px 0}
 .head{max-width:640px;margin:0 0 40px}
