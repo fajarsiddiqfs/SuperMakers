@@ -100,8 +100,14 @@ h2{font-size:clamp(1.8rem,4.2vw,2.7rem);letter-spacing:-.03em;line-height:1.12;m
 .cardlink{margin-top:6px;font-size:.9rem;font-weight:600}
 .story{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
 .story-text{color:var(--muted);margin:0 0 14px;max-width:52ch;font-size:1.05rem}
-.ph-badge{display:inline-block;margin-top:14px;line-height:0}
-.ph-badge img{display:block;max-width:100%;height:auto}
+.story-text a{color:var(--dark);font-weight:600}
+.story-text a:hover{color:var(--purple)}
+.ph-badge{display:inline-flex;align-items:center;gap:12px;box-sizing:border-box;width:250px;height:54px;padding:0 16px;margin-top:14px;border:1px solid var(--dark);border-radius:10px;background:var(--white);color:var(--dark);text-decoration:none;transition:background .15s}
+.ph-badge:hover{background:var(--grey);color:var(--dark)}
+.ph-badge img{display:block;flex:none}
+.ph-badge span{display:flex;flex-direction:column;line-height:1.15}
+.ph-badge small{font-size:.66rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.ph-badge b{font-size:1.1rem;letter-spacing:-.02em}
 .timeline{list-style:none;margin:0;padding:0 0 0 28px;border-left:2px solid var(--line)}
 .timeline li{position:relative;padding:0 0 32px}
 .timeline li:last-child{padding-bottom:0}
@@ -109,6 +115,15 @@ h2{font-size:clamp(1.8rem,4.2vw,2.7rem);letter-spacing:-.03em;line-height:1.12;m
 .timeline li:last-child::before{border-color:var(--purple)}
 .when{display:block;font-size:1.6rem;font-weight:700;letter-spacing:-.03em}
 .what{display:block;color:var(--muted);margin-top:4px;max-width:34ch}
+.press{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:56px}
+.press-card{display:flex;flex-direction:column;gap:8px;padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--white);color:var(--dark);text-decoration:none;transition:border-color .15s,box-shadow .15s}
+.press-card:hover{border-color:var(--dark);box-shadow:0 10px 30px rgba(0,0,0,.08);color:var(--dark)}
+.press-tag{align-self:flex-start;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--dark);color:#fff;border-radius:999px;padding:3px 10px}
+.press-card h3{margin:6px 0 0;font-size:1.15rem;letter-spacing:-.01em}
+.press-card p{margin:0;color:var(--muted);font-size:.97rem}
+.press-go{margin-top:auto;padding-top:10px;font-weight:600;font-size:.92rem}
+.press-go i{font-style:normal;display:inline-block;transition:transform .15s}
+.press-card:hover .press-go i{transform:translate(2px,-2px);color:var(--purple)}
 /* founder */
 .about{background:var(--grey)}
 .about-box{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start;max-width:860px}
@@ -197,15 +212,15 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <p class="sub">A growing portfolio of independent digital products.</p>
       </div>
       <div class="grid">
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">N</span></div><div class="body"><h3>NudgeBill <span class="badge">Building</span></h3><p><strong style="color:var(--dark)">Get paid. Without the awkward chase.</strong></p><p>An invoice follow-up assistant for freelancers, designers, consultants and small agencies.</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">C</span></div><div class="body"><h3>1. ClientProof <span class="badge">Idea</span></h3><p>Collect client feedback, approvals and revision requests in one place</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">T</span></div><div class="body"><h3>2. TestimonialKit <span class="badge">Idea</span></h3><p>Collect testimonials and publish them as website widgets</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">R</span></div><div class="body"><h3>3. Renewly <span class="badge">Idea</span></h3><p>Track domain, hosting, SSL and software renewal dates</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">B</span></div><div class="body"><h3>4. BriefFlow <span class="badge">Idea</span></h3><p>Turn client questionnaires into organised project briefs</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>5. SponsorTrack <span class="badge">Idea</span></h3><p>Track brand collaborations, deliverables, deadlines and payments</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">C</span></div><div class="body"><h3>6. CertiTrack <span class="badge">Idea</span></h3><p>Track certificates, licences and expiry dates</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">W</span></div><div class="body"><h3>7. WorkshopKit <span class="badge">Idea</span></h3><p>Manage workshop registrations, attendance, certificates and follow-ups</p></div></article>
-        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>8. LaunchPage <span class="badge">Idea</span></h3><p>Create simple waitlists and launch pages for upcoming products</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">D</span></div><div class="body"><h3>Duemate <span class="badge">Building</span></h3><p>An invoice follow-up assistant for freelancers, designers, consultants and small agencies.</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">A</span></div><div class="body"><h3>1. Approvely <span class="badge">Idea</span></h3><p>Collect client feedback, approvals and revision requests in one place</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">P</span></div><div class="body"><h3>2. Praisebox <span class="badge">Idea</span></h3><p>Collect testimonials and publish them as website widgets</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">R</span></div><div class="body"><h3>3. Renewpilot <span class="badge">Idea</span></h3><p>Track domain, hosting, SSL and software renewal dates</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">B</span></div><div class="body"><h3>4. Briefwell <span class="badge">Idea</span></h3><p>Turn client questionnaires into organised project briefs</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">D</span></div><div class="body"><h3>5. Dealtrail <span class="badge">Idea</span></h3><p>Track brand collaborations, deliverables, deadlines and payments</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>6. Licensely <span class="badge">Idea</span></h3><p>Track certificates, licences and expiry dates</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>7. Sessionly <span class="badge">Idea</span></h3><p>Manage workshop registrations, attendance, certificates and follow-ups</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>8. Launchlane <span class="badge">Idea</span></h3><p>Create simple waitlists and launch pages for upcoming products</p></div></article>
         <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>Shipping Game <span class="badge">Launched 2019</span></h3><p>An indie game built with no code on Koji. Match it in 20 moves and get your high score.</p><a class="cardlink" href="https://www.producthunt.com/products/supermakers" target="_blank" rel="noopener">View on Product Hunt</a></div></article>
       </div>
     </div>
@@ -242,14 +257,43 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="wrap story">
       <div>
         <h2>Our Story</h2>
-        <p class="story-text">Supermakers started in 2019, when Fajar Siddiq built Shipping Game, an indie game made with no code on Koji. It launched on Product Hunt and ranked #4 of the day.</p>
+        <p class="story-text">Supermakers started in 2019, when Fajar Siddiq built Shipping Game, an indie game made with no code on Koji. It launched on Product Hunt and ranked #4 of the day, featuring <a href="https://x.com/jijosunny/status/1115086225285640192" target="_blank" rel="noopener">Buy Me A Coffee</a> and <a href="https://x.com/fajarsiddiqFS/status/1203861483098009600" target="_blank" rel="noopener">Makerlog</a>.</p>
         <p class="story-text">Today, Supermakers has grown from one small game into a studio that builds more products.</p>
-        <a class="ph-badge" href="https://www.producthunt.com/products/supermakers/reviews/new?utm_source=badge-product_review&amp;utm_medium=badge&amp;utm_source=badge-supermakers" target="_blank" rel="noopener"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=409656&amp;theme=light" alt="SuperMakers - An indie game built with no code | Product Hunt" width="250" height="54"></a>
+        <a class="ph-badge" href="https://www.producthunt.com/products/supermakers?page=4#comments" target="_blank" rel="noopener" aria-label="SuperMakers on Product Hunt, ranked number 4 of the day">
+          <img src="https://ph-static.imgix.net/badges/color/dailybadge4.svg" alt="" width="32" height="35">
+          <span><small>#4 Product of the Day</small><b>Product Hunt</b></span>
+        </a>
       </div>
       <ol class="timeline">
         <li><span class="when">2019</span><span class="what">Shipping Game launches on Product Hunt and ranks #4 of the day.</span></li>
-        <li><span class="when">Today</span><span class="what">Supermakers builds, launches and operates more products, starting with NudgeBill.</span></li>
+        <li><span class="when">Today</span><span class="what">Supermakers builds, launches and operates more products, starting with Duemate.</span></li>
       </ol>
+    </div>
+    <div class="wrap press">
+      <a class="press-card" href="https://medium.com/madewithkoji/how-a-professional-yo-yoer-built-launched-and-made-it-1-on-product-hunt-in-less-than-24-hours-e5c6fe4c6df3" target="_blank" rel="noopener">
+        <span class="press-tag">Medium</span>
+        <h3>Featured on Medium</h3>
+        <p>How a Match Three game was customised and shipped in about 23 minutes.</p>
+        <span class="press-go">Read the article <i aria-hidden="true">&#8599;</i></span>
+      </a>
+      <a class="press-card" href="https://x.com/codeorg/status/1121085893304102912" target="_blank" rel="noopener">
+        <span class="press-tag">X</span>
+        <h3>Featured on Code.org</h3>
+        <p>A game idea taken from concept to release in less than an hour.</p>
+        <span class="press-go">View on X <i aria-hidden="true">&#8599;</i></span>
+      </a>
+      <a class="press-card" href="https://x.com/fajarsiddiqFS/status/1120482070197952512" target="_blank" rel="noopener">
+        <span class="press-tag">X</span>
+        <h3>Video call with the CEO of Koji</h3>
+        <p>The call led to an invitation to California, with the trip paid for.</p>
+        <span class="press-go">View on X <i aria-hidden="true">&#8599;</i></span>
+      </a>
+      <a class="press-card" href="https://x.com/madewithkoji" target="_blank" rel="noopener">
+        <span class="press-tag">X</span>
+        <h3>Linktree acquired Koji</h3>
+        <p>Koji, the no-code platform Shipping Game was built on, is now part of Linktree.</p>
+        <span class="press-go">Follow Koji on X <i aria-hidden="true">&#8599;</i></span>
+      </a>
     </div>
   </section>
 
