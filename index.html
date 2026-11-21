@@ -97,6 +97,18 @@ h2{font-size:clamp(1.8rem,4.2vw,2.7rem);letter-spacing:-.03em;line-height:1.12;m
 .philosophy{background:var(--dark);color:#fff;padding:96px 0}
 .ph-title{font-size:1rem;font-weight:600;letter-spacing:0;color:#bbb;margin:0 0 28px}
 .ph-belief{font-size:clamp(1.7rem,4.2vw,3rem);line-height:1.18;letter-spacing:-.03em;font-weight:600;max-width:22em;margin:0}
+.cardlink{margin-top:6px;font-size:.9rem;font-weight:600}
+.story{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start}
+.story-text{color:var(--muted);margin:0 0 14px;max-width:52ch;font-size:1.05rem}
+.ph-badge{display:inline-block;margin-top:14px;line-height:0}
+.ph-badge img{display:block;max-width:100%;height:auto}
+.timeline{list-style:none;margin:0;padding:0 0 0 28px;border-left:2px solid var(--line)}
+.timeline li{position:relative;padding:0 0 32px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-36px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--white);border:3px solid var(--dark)}
+.timeline li:last-child::before{border-color:var(--purple)}
+.when{display:block;font-size:1.6rem;font-weight:700;letter-spacing:-.03em}
+.what{display:block;color:var(--muted);margin-top:4px;max-width:34ch}
 /* founder */
 .about{background:var(--grey)}
 .about-box{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start;max-width:860px}
@@ -119,6 +131,7 @@ footer{padding:36px 0 calc(36px + env(safe-area-inset-bottom,0px));border-top:1p
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
 @media(max-width:820px){
+  .story{grid-template-columns:1fr;gap:40px}
   .philosophy{padding:64px 0}
       .portrait{width:120px;height:120px}
   .links{display:none}
@@ -193,6 +206,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">C</span></div><div class="body"><h3>6. CertiTrack <span class="badge">Idea</span></h3><p>Track certificates, licences and expiry dates</p></div></article>
         <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">W</span></div><div class="body"><h3>7. WorkshopKit <span class="badge">Idea</span></h3><p>Manage workshop registrations, attendance, certificates and follow-ups</p></div></article>
         <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">L</span></div><div class="body"><h3>8. LaunchPage <span class="badge">Idea</span></h3><p>Create simple waitlists and launch pages for upcoming products</p></div></article>
+        <article class="card"><div class="thumb"><span class="logo" aria-hidden="true">S</span></div><div class="body"><h3>Shipping Game <span class="badge">Launched 2019</span></h3><p>An indie game built with no code on Koji. Match it in 20 moves and get your high score.</p><a class="cardlink" href="https://www.producthunt.com/products/supermakers" target="_blank" rel="noopener">View on Product Hunt</a></div></article>
       </div>
     </div>
   </section>
@@ -221,6 +235,21 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <li><a href="https://fajarsiddiq.com/telegram" aria-label="Telegram"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M21.500 3.500L2.800 10.700c-.8.300-.8.900-.1 1.100l4.800 1.500 1.800 5.600c.2.500.4.600.8.200l2.600-2.100 4.900 3.600c.9.500 1.500.2 1.700-.8l3-14.400c.3-1.200-.4-1.700-1.300-1.100zM9.300 13.300l9.400-6c.4-.3.800-.1.500.2l-7.700 7-.3 3.700z"/></svg></a></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap story">
+      <div>
+        <h2>Our Story</h2>
+        <p class="story-text">Supermakers started in 2019, when Fajar Siddiq built Shipping Game, an indie game made with no code on Koji. It launched on Product Hunt and ranked #4 of the day.</p>
+        <p class="story-text">Today, Supermakers has grown from one small game into a studio that builds more products.</p>
+        <a class="ph-badge" href="https://www.producthunt.com/products/supermakers/reviews/new?utm_source=badge-product_review&amp;utm_medium=badge&amp;utm_source=badge-supermakers" target="_blank" rel="noopener"><img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=409656&amp;theme=light" alt="SuperMakers - An indie game built with no code | Product Hunt" width="250" height="54"></a>
+      </div>
+      <ol class="timeline">
+        <li><span class="when">2019</span><span class="what">Shipping Game launches on Product Hunt and ranks #4 of the day.</span></li>
+        <li><span class="when">Today</span><span class="what">Supermakers builds, launches and operates more products, starting with NudgeBill.</span></li>
+      </ol>
     </div>
   </section>
 
