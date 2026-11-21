@@ -51,9 +51,9 @@ em{font-style:normal;color:var(--purple);font-family:inherit;font-weight:inherit
 /* hero */
 .hero{padding:72px 0 80px;background:var(--white)}
 .hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
-.pill{display:inline-block;background:var(--purple);border:1px solid var(--purple);color:#fff;font-size:.85rem;font-weight:600;padding:5px 14px;border-radius:999px;margin-bottom:22px}
+.pill{display:inline-block;background:transparent;border:1px solid var(--dark);color:var(--dark);font-size:.85rem;font-weight:600;padding:5px 14px;border-radius:999px;margin-bottom:22px}
 h1{font-size:clamp(2.6rem,6.5vw,4.6rem);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px}
-.tagline{font-size:1.5rem;font-weight:600;letter-spacing:-.02em;margin:0 0 14px}
+h1.tagline{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:700;line-height:1.04;letter-spacing:-.035em;margin:0 0 22px}
 .lead{font-size:1.15rem;color:var(--muted);max-width:46ch;margin:0 0 12px}
 .cta{margin-top:26px}
 .byline{margin:0 0 30px;color:var(--muted)}
@@ -69,15 +69,16 @@ h1{font-size:clamp(2.6rem,6.5vw,4.6rem);line-height:1.04;letter-spacing:-.035em;
 .t3{top:195px;left:4%;transform:rotate(-1deg)}
 
 .logos{padding:36px 0;background:var(--white)}
-.logo-row{list-style:none;margin:0;padding:0;display:flex;flex-wrap:nowrap;justify-content:space-between;align-items:center;gap:20px 24px}
-.logo-row li{flex:0 1 auto;min-width:0}
-.logo-row a{display:flex;align-items:center;gap:10px;color:#9a9a9f;text-decoration:none;font-weight:700;font-size:1.1rem;letter-spacing:-.02em;transition:color .15s}
+.logo-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);align-items:center;gap:24px 0}
+.logo-row li{display:flex;justify-content:center;align-items:center;min-width:0}
+.logo-row a{display:flex;align-items:center;gap:10px;color:#9a9a9f;text-decoration:none;font-weight:700;font-size:1.4rem;letter-spacing:-.02em;transition:color .15s}
 .logo-row a:hover{color:var(--dark)}
-.lg{display:block;flex:none}
-.lg-wide{display:block;height:26px;width:auto}
-.logo-img{display:block;height:30px;width:auto;filter:grayscale(1);opacity:.5;transition:opacity .15s}
+.lg{display:block;flex:none;width:44px;height:44px}
+.lg-wide{display:block;height:38px;width:auto;max-width:100%}
+.logo-img{display:block;height:44px;width:auto;max-width:100%;filter:grayscale(1);opacity:.5;transition:opacity .15s}
 .logo-row a:hover .logo-img{opacity:1}
-@media(max-width:820px){.logo-row{flex-wrap:wrap;justify-content:space-around;gap:24px 32px}}
+@media(max-width:820px){.logo-row{grid-template-columns:repeat(3,1fr);gap:28px 0}.logo-row a{font-size:1.15rem}.lg{width:36px;height:36px}.logo-img{height:36px}.lg-wide{height:30px}}
+@media(max-width:520px){.logo-row{grid-template-columns:repeat(2,1fr)}}
 /* sections */
 section{padding:84px 0}
 .head{max-width:640px;margin:0 0 40px}
@@ -183,8 +184,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
     <div class="wrap hero-grid">
       <div>
         <span class="pill">Independent Digital Product Studio</span>
-        <h1>Supermakers</h1>
-        <p class="tagline">Small Products. Real Problems.</p>
+        <h1 class="tagline">Small Products. Real Problems.</h1>
         <p class="lead">Supermakers is an independent digital product studio building, launching and operating useful internet products.</p>
         <div class="cta">
           <a class="btn" href="#products">Explore Products</a>
@@ -205,8 +205,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <li><a href="https://www.producthunt.com/products/supermakers?page=4#comments" target="_blank" rel="noopener" aria-label="Product Hunt"><svg class="lg" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M9.500 7h3.300a3.100 3.100 0 0 1 0 6.200H11.200V17H9.500zm1.700 1.600v3h1.500a1.500 1.500 0 0 0 0-3z" fill="#fff" fill-rule="evenodd"/></svg><span>Product Hunt</span></a></li>
         <li><a href="https://x.com/jijosunny/status/1118890582603026432" target="_blank" rel="noopener" aria-label="Buy Me A Coffee"><img class="logo-img" src="images/logos/buymeacoffee.svg" alt="Buy Me A Coffee" height="30"></a></li>
         <li><a href="https://medium.com/madewithkoji/how-a-professional-yo-yoer-built-launched-and-made-it-1-on-product-hunt-in-less-than-24-hours-e5c6fe4c6df3" target="_blank" rel="noopener" aria-label="Medium"><svg class="lg" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><circle cx="7.500" cy="12" r="5.500"/><ellipse cx="16.500" cy="12" rx="2.800" ry="5.200"/><rect x="21" y="7" width="1.800" height="10" rx=".9"/></svg><span>Medium</span></a></li>
-        <li><a href="https://x.com/fajarsiddiqFS/status/1203861483098009600" target="_blank" rel="noopener" aria-label="Koji"><img class="logo-img" src="images/logos/koji.png" alt="Koji" width="191" height="120" style="height:26px;width:auto"></a></li>
-        <li><a href="https://x.com/codeorg/status/1121085893304102912" target="_blank" rel="noopener" aria-label="Code.org"><svg class="lg-wide" height="26" viewBox="0 0 591.15 100" fill="currentColor" role="img" aria-label="Code.org" focusable="false"><path d="M412,0h-64C338.06,0,330,8.06,330,18v64c0,9.94,8.06,18,18,18h64c9.94,0,18-8.06,18-18V18C430,8.06,421.94,0,412,0ZM396.19,72.74h-32.18V27.24h31.85v6.96h-23.73v11.77h20.15v6.83h-20.15v13h24.05v6.96Z"/> <g> <path d="M192,0h-64C118.06,0,110,8.06,110,18v64c0,9.94,8.06,18,18,18h64c9.94,0,18-8.06,18-18V18C210,8.06,201.94,0,192,0ZM160.01,73.72c-12.54,0-23.34-9.43-23.34-23.73s10.79-23.73,23.34-23.73,23.34,9.36,23.34,23.73-10.79,23.73-23.34,23.73Z"/> <ellipse cx="160.01" cy="50" rx="14.76" ry="16.77"/> </g> <path d="M82,0H18C8.06,0,0,8.06,0,18v64C0,91.94,8.06,100,18,100h64c9.94,0,18-8.06,18-18V18C100,8.06,91.94,0,82,0ZM51.52,66.64c6.83,0,10.34-4.1,11.44-7.74h8.32c-1.37,7.09-7.74,14.82-19.96,14.82-13.07,0-22.49-9.04-22.49-23.73s10.27-23.73,22.49-23.73,18.53,7.67,19.96,14.82h-8.32c-1.1-3.64-4.62-7.74-11.44-7.74-8.12,0-14.04,6.05-14.04,16.64s5.92,16.64,14.04,16.64Z"/> <path d="M487.36,2.92l-49.15,88.66c-2.1,3.78.64,8.42,4.96,8.42h98.3c4.32,0,7.06-4.64,4.96-8.42L497.29,2.92c-2.16-3.9-7.76-3.9-9.92,0Z"/> <rect x="557.65" width="33.5" height="100" rx="5.5" ry="5.5"/> <g> <path d="M267.36,34.2h-6.17v31.59h6.17c10.27,0,16.32-5.72,16.32-15.8s-6.05-15.8-16.32-15.8Z"/> <path d="M302,0h-64C228.06,0,220,8.06,220,18v64c0,9.94,8.06,18,18,18h64c9.94,0,18-8.06,18-18V18C320,8.06,311.94,0,302,0ZM268.01,72.74h-14.95V27.24h14.95c13.65,0,23.92,9.1,23.92,22.75s-10.27,22.75-23.92,22.75Z"/> </g></svg></a></li>
+        <li><a href="https://x.com/fajarsiddiqFS/status/1203861483098009600" target="_blank" rel="noopener" aria-label="Koji"><img class="logo-img" src="images/logos/koji.png" alt="Koji" width="191" height="120" ></a></li>
+        <li><a href="https://x.com/codeorg/status/1121085893304102912" target="_blank" rel="noopener" aria-label="Code.org"><svg class="lg-wide" viewBox="0 0 591.15 100" fill="currentColor" role="img" aria-label="Code.org" focusable="false"><path d="M412,0h-64C338.06,0,330,8.06,330,18v64c0,9.94,8.06,18,18,18h64c9.94,0,18-8.06,18-18V18C430,8.06,421.94,0,412,0ZM396.19,72.74h-32.18V27.24h31.85v6.96h-23.73v11.77h20.15v6.83h-20.15v13h24.05v6.96Z"/> <g> <path d="M192,0h-64C118.06,0,110,8.06,110,18v64c0,9.94,8.06,18,18,18h64c9.94,0,18-8.06,18-18V18C210,8.06,201.94,0,192,0ZM160.01,73.72c-12.54,0-23.34-9.43-23.34-23.73s10.79-23.73,23.34-23.73,23.34,9.36,23.34,23.73-10.79,23.73-23.34,23.73Z"/> <ellipse cx="160.01" cy="50" rx="14.76" ry="16.77"/> </g> <path d="M82,0H18C8.06,0,0,8.06,0,18v64C0,91.94,8.06,100,18,100h64c9.94,0,18-8.06,18-18V18C100,8.06,91.94,0,82,0ZM51.52,66.64c6.83,0,10.34-4.1,11.44-7.74h8.32c-1.37,7.09-7.74,14.82-19.96,14.82-13.07,0-22.49-9.04-22.49-23.73s10.27-23.73,22.49-23.73,18.53,7.67,19.96,14.82h-8.32c-1.1-3.64-4.62-7.74-11.44-7.74-8.12,0-14.04,6.05-14.04,16.64s5.92,16.64,14.04,16.64Z"/> <path d="M487.36,2.92l-49.15,88.66c-2.1,3.78.64,8.42,4.96,8.42h98.3c4.32,0,7.06-4.64,4.96-8.42L497.29,2.92c-2.16-3.9-7.76-3.9-9.92,0Z"/> <rect x="557.65" width="33.5" height="100" rx="5.5" ry="5.5"/> <g> <path d="M267.36,34.2h-6.17v31.59h6.17c10.27,0,16.32-5.72,16.32-15.8s-6.05-15.8-16.32-15.8Z"/> <path d="M302,0h-64C228.06,0,220,8.06,220,18v64c0,9.94,8.06,18,18,18h64c9.94,0,18-8.06,18-18V18C320,8.06,311.94,0,302,0ZM268.01,72.74h-14.95V27.24h14.95c13.65,0,23.92,9.1,23.92,22.75s-10.27,22.75-23.92,22.75Z"/> </g></svg></a></li>
       </ul>
     </div>
   </section>
