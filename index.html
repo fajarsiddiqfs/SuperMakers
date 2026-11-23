@@ -106,6 +106,7 @@ h2{font-size:clamp(1.8rem,4.2vw,2.7rem);letter-spacing:-.03em;line-height:1.12;m
 .card .body p{margin-bottom:14px}
 .card h3{margin:0;font-size:1.5rem;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .card p{margin:0;color:var(--muted);font-size:1.05rem;line-height:1.6}
+.fav{width:28px;height:28px;border-radius:8px;flex:none;object-fit:contain}
 .badge{font-size:.8rem;font-weight:600;color:var(--purple);background:var(--purple-soft);border-radius:999px;padding:4px 12px}
 
 .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
@@ -191,6 +192,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .grid .card:nth-child(8) .thumb{background:linear-gradient(135deg,#D2F0F4,#E3F3FA)}
 .grid .card:nth-child(9) .thumb{background:linear-gradient(135deg,#F1DCF8,#E6DDF9)}
 .grid .card:nth-child(10) .thumb{background:linear-gradient(135deg,#E4E4E8,#F1F1F4)}
+.grid .card:nth-child(11) .thumb{background:linear-gradient(135deg,#E0F0D8,#F3F9E4)}
+.grid .card:nth-child(12) .thumb{background:linear-gradient(135deg,#DDE3F5,#EFE6F9)}
 
 /* grid breakpoints (must come after base .grid) */
 @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -284,6 +287,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <p class="sub">A growing portfolio of independent digital products.</p>
       </div>
       <div class="grid">
+        <article class="card"><div class="thumb"></div><div class="body"><h3><img class="fav" src="https://www.google.com/s2/favicons?domain=productdesigner.xyz&sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()">Product Designer <span class="badge">Live</span></h3><p>ProductDesigner.xyz applies every palette to a full UI, so you can pick colors faster and see them in real use. For designers and anyone building with AI.</p><a class="btn sm" href="https://productdesigner.xyz/" target="_blank" rel="noopener" aria-label="Open Product Designer">View Project →</a></div></article>
+        <article class="card"><div class="thumb"></div><div class="body"><h3><img class="fav" src="https://www.google.com/s2/favicons?domain=flapclock.com&sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()">Flap Clock <span class="badge">Live</span></h3><p>A real-time flip clock for desktop and mobile featuring time, date, location, weather, timezone, alarms, ambient sounds, radio, and embed support in a clean fullscreen design.</p><a class="btn sm" href="https://flapclock.com/" target="_blank" rel="noopener" aria-label="Open Flap Clock">View Project →</a></div></article>
+        <article class="card"><div class="thumb"></div><div class="body"><h3><img class="fav" src="https://www.google.com/s2/favicons?domain=producthunt.com&sz=64" alt="" width="28" height="28" loading="lazy" onerror="this.remove()">Shipping Game <span class="badge">Launched 2019</span></h3><p>An indie game built with no code on Koji. Match it in 20 moves and get your high score.</p><a class="btn sm" href="https://www.producthunt.com/products/supermakers" target="_blank" rel="noopener" aria-label="Open Shipping Game on Product Hunt">View Project →</a></div></article>
         <article class="card"><div class="thumb"></div><div class="body"><h3>Duemate <span class="badge">Building</span></h3><p>An invoice follow-up assistant for freelancers, designers, consultants and small agencies.</p><a class="btn sm" href="#products" aria-label="Open Duemate">View Project →</a></div></article>
         <article class="card"><div class="thumb"></div><div class="body"><h3>Approvely <span class="badge">Idea</span></h3><p>Collect client feedback, approvals and revision requests in one place</p><a class="btn sm" href="#products" aria-label="Open Approvely">View Project →</a></div></article>
         <article class="card"><div class="thumb"></div><div class="body"><h3>Praisebox <span class="badge">Idea</span></h3><p>Collect testimonials and publish them as website widgets</p><a class="btn sm" href="#products" aria-label="Open Praisebox">View Project →</a></div></article>
@@ -293,7 +299,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <article class="card"><div class="thumb"></div><div class="body"><h3>Licensely <span class="badge">Idea</span></h3><p>Track certificates, licences and expiry dates</p><a class="btn sm" href="#products" aria-label="Open Licensely">View Project →</a></div></article>
         <article class="card"><div class="thumb"></div><div class="body"><h3>Sessionly <span class="badge">Idea</span></h3><p>Manage workshop registrations, attendance, certificates and follow-ups</p><a class="btn sm" href="#products" aria-label="Open Sessionly">View Project →</a></div></article>
         <article class="card"><div class="thumb"></div><div class="body"><h3>Launchlane <span class="badge">Idea</span></h3><p>Create simple waitlists and launch pages for upcoming products</p><a class="btn sm" href="#products" aria-label="Open Launchlane">View Project →</a></div></article>
-        <article class="card"><div class="thumb"></div><div class="body"><h3>Shipping Game <span class="badge">Launched 2019</span></h3><p>An indie game built with no code on Koji. Match it in 20 moves and get your high score.</p><a class="btn sm" href="https://www.producthunt.com/products/supermakers" target="_blank" rel="noopener" aria-label="Open Shipping Game on Product Hunt">View Project →</a></div></article>
       </div>
     </div>
   </section>
